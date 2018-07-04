@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class SteamVR_Teleporter : MonoBehaviour
+public class SteamVR_Teleporter : NetworkBehaviour
 {
 	public enum TeleportType
 	{

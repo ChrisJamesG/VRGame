@@ -124,6 +124,8 @@ GameObject:
   - component: {fileID: 23870165848067488}
   - component: {fileID: 33275861133803642}
   - component: {fileID: 114363135007415804}
+  - component: {fileID: 114387020298081338}
+  - component: {fileID: 114575352222908820}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -312,10 +314,10 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
+  near clip plane: 0.01
   far clip plane: 1
-  field of view: 60
-  orthographic: 1
+  field of view: 120
+  orthographic: 0
   orthographic size: 1
   m_Depth: 0
   m_CullingMask:
@@ -425,7 +427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportOnClick: 1
-  teleportType: 2
+  teleportType: 1
 --- !u!114 &114363135007415804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -452,6 +454,38 @@ MonoBehaviour:
   - {x: -1.65, y: 0.01, z: -1.275}
   - {x: -1.65, y: 0.01, z: 1.275}
   - {x: 1.65, y: 0.01, z: 1.275}
+--- !u!114 &114387020298081338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727435827859832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 115
+    i1: 185
+    i2: 23
+    i3: 34
+    i4: 7
+    i5: 118
+    i6: 194
+    i7: 36
+    i8: 218
+    i9: 224
+    i10: 163
+    i11: 103
+    i12: 172
+    i13: 114
+    i14: 37
+    i15: 35
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114529989622766720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -483,6 +517,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &114575352222908820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727435827859832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114624882343892318
 MonoBehaviour:
   m_ObjectHideFlags: 1

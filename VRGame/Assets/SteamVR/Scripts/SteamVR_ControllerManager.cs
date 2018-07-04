@@ -5,9 +5,10 @@
 //=============================================================================
 
 using UnityEngine;
+using UnityEngine.Networking;
 using Valve.VR;
 
-public class SteamVR_ControllerManager : MonoBehaviour
+public class SteamVR_ControllerManager : NetworkBehaviour
 {
 	public GameObject left, right;
 
